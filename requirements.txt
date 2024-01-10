@@ -1,0 +1,3 @@
+gunicorn   #for the deployement
+flask
+scikit-learn
