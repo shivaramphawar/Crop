@@ -1,46 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crop Prediction Project</title>
     <style>
         body {
-            background-color: #1e1e1e;
+            background-color: #000; /* Set background color to black */
             color: #fff;
             font-family: 'Arial', sans-serif;
             margin: 0;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
             height: 100vh;
+        }
+
+        .bar {
+            background-color: #d2b48c;
+            width: 100%;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .welcome-message {
+            font-size: 1.5rem;
+            color: #4CAF50;
+            margin-top: 15vh;
+            margin-bottom: 20px;
         }
 
         .container {
             text-align: center;
             animation: fadeIn 1s ease-in-out;
+            margin-top: auto;
+            margin-bottom: 25vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
         }
 
         h1 {
             font-size: 2.5rem;
+            color: #fff;
+            margin-bottom: 10px;
         }
 
         button {
             display: inline-block;
             padding: 15px 30px;
             font-size: 1.2rem;
-            margin: 10px;
+            margin: 5px;
             text-decoration: none;
-            color: #fff;
-            background-color: #3498db;
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            background-color: #ff0000;
             transition: background-color 0.3s ease;
         }
 
-        button:hover {
-            background-color: #2980b9;
+        button.show-data {
+            background-color: #3498db;
         }
 
         @keyframes fadeIn {
@@ -53,19 +75,18 @@
         }
     </style>
 </head>
+
 <body>
-    <div class="container">
+    <div class="bar">
         <h1>Crop Prediction Project</h1>
-        <a href="/prediction"><button>Make Prediction</button></a>
-        <a href="/showdata"><button>Show Data</button></a>
+    </div>
+    <div class="welcome-message">
+        <p>Hi there! Ready to predict your crop's future? Welcome to CropPredict - where your fields become the talk of the harvest!</p>
+    </div>
+    <div class="container">
+        <a href="/prediction"><button style="margin-bottom: 5px;">Make Prediction</button></a>
+        <a href="/showdata"><button class="show-data">Show Data</button></a>
     </div>
 </body>
+
 </html>
-
-
-
-
-
-
-
-
