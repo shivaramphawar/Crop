@@ -48,7 +48,7 @@ def showdata():
         p['Nitrogen']=i[0]
         p['Phosphorus']=i[1]
         p['Potassium']=i[2]
-        p['Temparature']=i[3]
+        p['Temperature']=i[3]
         p['Humidity']=i[4]
         p['Ph']=i[5]
         p['Rainfall']=i[6]
